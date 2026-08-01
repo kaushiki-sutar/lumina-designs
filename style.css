@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;600;700&display=swap');
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:300;
+    font-size: 1.2rem;
+    line-height: 2.1;
+    background-color: #f8f8f6;
+    color: #111111;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    background-color: white;         
+    padding:30px 20px;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight:300;
+    line-height:2.0;
+    font-size:1.4rem;
+}
+.brand{
+    font-family:'Engravers MT';
+    font-size: 2.3rem;
+    font-weight: 130;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 8px;
+    line-height:3.5;
+}
+.tagline{
+    font-size:1.2rem;
+    letter-spacing:1px;
+    line-height:1;
+    font-family:'Cormorant Garamond', serif;
+    font-style: italic;
+    color:rgb(3, 0, 33);
+    margin-bottom:22px;
+    
+}
+nav{
+    display:flex;
+    justify-content: center;
+    gap:75px;
+}
+ nav a{
+    font-size:1.0rem;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+    font-weight:500;
+    padding: 10px;
+    transition:color 0.4s ease;
+    position:relative;
+    color:rgb(52, 1, 1);
+
+ }
+
+ nav a:hover{
+    color:#c6ae42;
+ }
+#hero{
+    background-color: white;
+    padding: 80px 20px;
+    margin-bottom: 30px;
+}
+.new{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.3rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+}
+.hero-text{
+    font-family:'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    color:#4d4b4b;
+    margin-bottom: 44px;
+}
+.btn{
+    display: inline-block;
+    background: #111;
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 1.5px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    margin-right:115px;
+}
+.btn:hover{
+    background: #2f2f2f;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0,18);
+}
+
+.btn-outline{
+    display: inline-block;
+    border: 1px solid #111;
+    color:#111;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    transition: 0.3s;
+}
+.btn-outline:hover{
+    background: #b89b5e;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+#about{
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    overflow: hidden;
+}
+#about video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    display: block;
+    transition: 0.4s;
+}
+.about-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    padding: 40px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+}
+
+.under{
+    text-decoration: underline;
+    text-decoration-color: #c5ab39;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
+
+#about:hover .about-overlay{
+    opacity:1;
+    transform:translateY(0);
+}
+#about:hover img{
+    transform: scale(1.05);
+}
+
+.about-overlay h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.about-overlay p{
+    max-width:700px;
+    font-size:1.1rem;
+    line-height:1.8;
+}
+#collection{
+    width:90%;
+    max-width:1200px;
+    margin: 100px auto;
+}
+.collection-title{
+    font-family: 'Cormorant Garamond',serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+}
+.collection-subtitle{
+    font-size: 1.1rem;
+    color:#555;
+    margin-bottom: 80px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+.collection-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:100px;
+    margin: 120px 0;
+}
+.collection-row.left{
+    flex-direction: row;
+}
+.collection-row.right{
+    flex-direction: row-reverse;
+}
+.collection-text{
+    flex: 1;
+    max-width: 360px;
+}
+.collection-text h3{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 19px;
+}
+.quote{
+    font-style: italic;
+    font-size: 1.2rem;
+    color:#696969;
+margin-bottom: 20px;
+}
+.description{
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color:#444;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 25px;
+}
+.collection-image{
+    flex: 2;
+}
+.collection-image img{
+    width:100%;
+    display: block;
+    transition: 0.4s;
+    cursor: pointer;
+    object-fit: cover;
+}
+.collection-image img:hover{
+    transform: scale(1.08);
+    filter: brightness(90%);
+}
+
+#newsletter{
+    text-align: center;
+    padding: 140px 20%;
+    background: #f8f8f6;
+}
+#newsletter h2{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+#newsletter p{
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1rem;
+    line-height: 1.8;
+    color:#555;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 25px;
+}
+.newsletter-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter-form label{
+    display: block;
+}
+.newsletter-form input{
+    width:320px;
+    padding:12px 15px;
+    border: 1px solid #322020;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+.newsletter-form input:focus{
+    border-color: #a99125;
+}
+.newsletter-form button{
+    padding: 10px 20px;
+    background: #111;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+}
+.newsletter-form button:hover{
+    background: #8f896b;
+}
+footer{
+    background: #111;
+    color:white;
+    padding: 40px 20px;
+    text-align: center;
+}
+footer h2{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+footer a{
+    text-decoration: none;
+}
+footer button{
+    background: #f8f8f6;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.4s;
+    margin:15px;
+}
+footer button:hover{
+    background: #5c5a5a;
+    color:white;
+}
+footer p{
+    margin-top: 50px;
+    font-family: 'Inter', sans-serif;
+    color:#777;
+    font-size:0.95rem;
+}
+#women{
+    background: whitesmoke;
+    text-align: center;
+    padding: 125px 10%;
+}
+#women h2{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+}
+.collection-quote{
+    font-style: italic;
+    margin: 0 auto 40px;
+    max-width: 700px;
+    font-size: 1.2rem;
+    color:#5a5959;
+    margin-bottom: 10px;
+}
+.collection-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+    padding: 60px 10%;
+    margin-bottom: 280px;
+}
+.product-card{
+    display:flex;
+    align-items: center;
+    gap: 70px;
+    justify-content: center;
+}
+.product-card img{
+    width:450px;
+    height:auto;
+    border-radius:4px;
+    transition:0.4s;
+}
+.product-card img:hover{
+    transform: scale(1.05);
+    filter: brightness(90%);
+}
+.product-info{
+    max-width: 400px;
+    text-align: left;
+}
+.product-card h3{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.product-info .price{
+    font-size: 1.5rem;
+    color:#555;
+    margin-bottom: 15px;
+}
+.product-info .description{
+    font-size: 1.1rem;
+   line-height: 1.8;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 25px;
+}
+.shop-link{
+    display: inline-block;
+    margin-top:35px;
+    padding:5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family:"cormorant garamond", serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:#1e1e1e;
+    border: 1px solid #151515;
+    background: transparent;
+    transition: all 0.4s ease;
+}
+.shop-link:hover{
+    border-color: #d1b32f;
+    color:#111;
+    transform: translateY(-3px);
+}
+.contact-page{
+    width:100%;
+    padding: 60px 10px;
+    box-sizing: border-box;
+}
+.contact-page h2{
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.6rem;
+    font-weight: 600;
+    color:#222;
+    margin-bottom: 28px;
+}
+.contact-page blockquote{
+    width: 65%;
+    margin: 0 auto 65px;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color:#454343;
+}
+.contact-page form{
+    width: 60%;
+    margin: 0 auto 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-page form label{
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-family: 'Cormorant Garamond', serif;
+}
+.contact-page input,
+.contact-page textarea{
+    width: 65%;
+    padding:14px 18px;
+    margin-bottom: 50px;
+    border: 1px solid #0a0a0a;
+    background: #fafafa;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    outline: none;
+    transition: 0.4s;
+}
+.contact-page input:focus,
+.contact-pahe textarea:focus{
+    border-color: #111;
+    background-color: antiquewhite;
+}
+.contact-page textarea{
+    resize: vertical;
+    min-height: 180px;
+}
+.contact-page button{
+    display: inline-block;
+    padding: 15px 35px;
+    background: transparent;
+    border: 1px solid rgb(70, 67, 67);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.contact-page button:hover{
+    background: #2a2a2a;
+    color: antiquewhite;
+}
+.contact-page .store-info{
+    width: 60%;
+    margin: 120px auto 80px;
+    text-align: center;
+}
+.contact-page .store-info h2{
+    font-size: 33px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+.contact-page .store-info p{
+    font-size: 16.5px;
+    line-height: 2;
+    color: #555;
+    font-family: "Inter", sans-serif;
+}
+.product-details{
+    flex: 1;
+    padding-top: 45px;
+}
+.product-details h2{
+    font-family:"Cormorant Garamond", serif;
+    font-size: 33px;
+    font-weight: 650;
+    color:#222;
+    margin-bottom: 19px;
+    line-height: 1.3;
+}
+.product-price{
+    font-size: 19.5px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color:#000000;
+    margin-bottom: 20px;
+}
+.product-description{
+    font-size: 21px;
+    line-height: 1.8;
+    color:#494949;
+    font-style: italic;
+    margin-bottom: 35px;
+    text-align: justify;
+}
+.product-details h3{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.sizes{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+.sizes button{
+    width: 45px;
+    height: 45px;
+    background: white;
+    border: 1px solid #1c1b1b;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 22px;
+}
+.sizes button:hover{
+    background: #1c1b1b;
+    color:white;
+    border-color: #1c1b1b;
+}
+.cart-button{
+    width: 40%;
+    padding: 18px 0;
+    background: #111;
+    color:white;
+    border:none;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    margin-bottom: 80px;
+}
+.cart-button:hover{
+    background:#534e4e;
+    color: rgb(14, 14, 14);
+}
+.product-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 30px;
+}
+.product-image{
+    flex: 1;
+}
+.product-image img{
+    width: 100%;
+    max-width: 600px;
+    height: 750px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.product-details{
+    flex: 1;
+    text-align: left;
+}
+/* THE MAISON */
+
+.maison-title
+{
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.8rem;
+    letter-spacing: 6px;
+    color: #111;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.heartmaison{
+    width: 75%;
+    margin: 0 auto 70px auto;
+}
+
+.section-heading{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #b59d34;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.section-text{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.9;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 18px;
+}
+
+.footer{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #777;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+/* THE CREATOR */
+
+.creator-title{
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.8rem;
+    letter-spacing: 6px;
+    color: #111;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.creator-quote{
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #777;
+    margin-bottom: 100px;
+}
+
+.creator-section{
+    width: 75%;
+    margin: 0 auto 70px auto;
+}
+
+.creator-photo{
+    width: 220px;
+    display: block;
+    margin: 40px auto;
+    border-radius: 12px;
+}
+
+.skills-list{
+    margin-top: 20px;
+    margin-left: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 2;
+}
+
+.skills-list li{
+    margin-bottom: 8px;
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 70px auto;
+}
+
+.about-text{
+    flex: 1;
+    min-width: 420px;
+}
+
+.creator-image{
+    width: 340px;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+}
+
+.creator-image:hover{
+    transform: scale(1.05);
+}

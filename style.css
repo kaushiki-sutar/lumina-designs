@@ -474,7 +474,7 @@ footer p{
     transition: 0.4s;
 }
 .contact-page input:focus,
-.contact-pahe textarea:focus{
+.contact-page textarea:focus{
     border-color: #111;
     background-color: antiquewhite;
 }
